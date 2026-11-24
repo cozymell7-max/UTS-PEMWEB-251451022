@@ -1,0 +1,226 @@
+/* PENGATURAN DASAR */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #eef0f8;
+    color: #222;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 30px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 12px;
+}
+
+/* HEADER */
+header {
+    background: #2025a8;
+    color: white;
+    padding: 30px;
+    border-radius: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.judul h1 {
+    font-size: 30px;
+}
+
+.judul h2 {
+    color: #ff851b;
+    font-size: 35px;
+}
+
+.judul p {
+    font-size: 14px;
+}
+
+nav {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #ffcc33;
+}
+
+/* TENTANG */
+#tentang {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    padding: 30px 0;
+}
+
+.gambar,
+.deskripsi {
+    flex: 1;
+}
+
+.gambar img {
+    width: 100%;
+    border-radius: 12px;
+}
+
+.deskripsi h2 {
+    color: #2025a8;
+    margin-bottom: 12px;
+}
+
+.tombol {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background: #ff851b;
+    color: white;
+    text-decoration: none;
+    border-radius: 7px;
+    font-weight: bold;
+}
+
+/* KARTU INFORMASI */
+#persyaratan {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    padding: 20px;
+    background: #f0f1fa;
+    border-radius: 12px;
+}
+
+.kartu {
+    flex: 1;
+    min-width: 200px;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+}
+
+.kartu h2 {
+    color: #2025a8;
+    margin-bottom: 10px;
+}
+
+.kartu ul {
+    padding-left: 20px;
+}
+
+/* TIMELINE */
+#timeline {
+    padding: 30px 0;
+}
+
+#timeline h2,
+#daftar h2,
+#kontak h2 {
+    color: #2025a8;
+    margin-bottom: 15px;
+}
+
+.jadwal {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.jadwal div {
+    flex: 1;
+    min-width: 150px;
+    padding: 20px;
+    text-align: center;
+    background: #2025a8;
+    color: white;
+    border-radius: 10px;
+}
+
+.jadwal h3 {
+    color: #ffcc33;
+}
+
+/* FORMULIR */
+#daftar {
+    padding: 25px;
+    background: #f0f1fa;
+    border-radius: 12px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+input,
+select {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+.persetujuan {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+button {
+    padding: 13px;
+    background: #2025a8;
+    color: white;
+    border: none;
+    border-radius: 7px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #ff851b;
+}
+
+/* KONTAK */
+#kontak {
+    padding: 25px 0;
+}
+
+/* FOOTER */
+footer {
+    padding: 20px;
+    text-align: center;
+    background: #2025a8;
+    color: white;
+    border-radius: 10px;
+}
+
+/* TAMPILAN HP */
+@media (max-width: 600px) {
+    header,
+    #tentang,
+    #persyaratan,
+    .jadwal {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    nav {
+        gap: 12px;
+    }
+}
